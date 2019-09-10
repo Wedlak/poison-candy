@@ -1,0 +1,64 @@
+//
+//	HEADER
+// ------------------------------------------------------
+header {
+   height: 100vh;
+}
+
+.header {
+   position: fixed;
+   z-index: 5;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(to bottom, rgba(#111, 0.5), rgba(#111, 0.6)), url('../img/band-small.jpg');
+   background-size: cover;
+   background-position: center;
+   color: $color-primary;
+
+   // @media(min-resolution: 192dpi) and (min-width: 600px),
+   //       (min-width: 2000px) {
+   //          background-image: linear-gradient(to bottom, rgba(#111, 0.5), rgba(#111, 0.6)), url('../img/band.jpg');
+   //       }
+
+   .lizatko {
+      display: block;
+      width: 50px;
+      height: 95px;
+      background-image: url('../img/logo.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 2%;
+   }
+
+   &-uvod {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 0 2rem;
+      backface-visibility: hidden;
+
+      &-main {
+         opacity: 0;
+         display: block;
+         animation: moveInLeft 1s .5s ease-out forwards;
+      }
+
+      &-sub {
+         opacity: 0;
+         color: $color-text-secondary;
+         display: block;
+         font-weight: 400;
+         font-size: 2.5rem;
+         letter-spacing: 1.2rem;
+         margin-top: 3rem;
+         margin-bottom: 8rem;
+         animation: moveInRight 1s .5s ease-out forwards;
+      }
+   }
+}

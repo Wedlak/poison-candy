@@ -1,0 +1,56 @@
+.gallery {
+   background-color: #222;
+   height: 60rem;
+   overflow: hidden;
+   &__slider {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: .5rem 0;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      transition: left .5s ease-out;
+   }
+   // overflow-x: scroll;
+
+   .image {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      &:not(:last-child){
+         padding-right: .5rem;
+      }
+   }
+
+   &__btn{
+      position: absolute;
+      z-index: 20;
+      height: 100%;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: rgba(0,0,0,.0);
+      transition: all .25s ease;
+      &:hover i{
+         transform: scale(1.4);
+      }
+      &:hover {
+      background-color: rgba(0,0,0,.4);
+
+      }
+      i{
+         transition: all .25s ease;
+         color: $color-light-1;
+         font-size: 1.8rem;
+      }
+   }
+   .btn-prev{
+      left: 0;
+   }
+   .btn-next{
+      right: 0;
+   }
+}

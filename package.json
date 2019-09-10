@@ -1,0 +1,16 @@
+{
+  "name": "poison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss dist/css/style.css -w --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0"
+  }
+}

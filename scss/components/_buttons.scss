@@ -1,0 +1,20 @@
+//
+//	BUTTONS
+// ------------------------------------------------------
+
+.btn{
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: $color-text-secondary;
+  padding: 1rem 6.5rem;
+  border-radius: 3px;
+  border: solid .2rem $color-text-secondary;
+  transition: all .5s;
+  &:hover{
+      border: solid .2rem $color-primary;
+      background-color: $color-primary;
+      color: $color-text-secondary;
+  }
+}

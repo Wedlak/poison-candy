@@ -1,0 +1,59 @@
+//
+//	TYPOGRAPHY
+// ------------------------------------------------------
+
+html, body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  color: $color-text-primary;
+}
+h1{
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+h2{
+  display: inline-block;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+
+  }
+h3{
+  font-size: 3rem;
+  line-height: 3rem;
+  color: $color-primary;
+}
+h4{
+   color: $color-text-primary;
+   font-size: 1.8rem;
+   text-transform: uppercase
+}
+.heading-icon{
+  font-size: 4.5rem;
+  padding-right: 1rem;
+}
+p{
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+a{
+  text-decoration: none;
+  color: $color-text-primary;
+}
+li{
+  font-size: 1.6rem;
+  display: inline-block;
+}
+::-moz-selection {
+  color: $color-light-1;
+  background: $color-primary;
+}
+::selection {
+  color: $color-light-1;
+  background: $color-primary;
+}

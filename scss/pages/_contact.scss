@@ -1,0 +1,68 @@
+//
+//	CONTACT
+// ------------------------------------------------------
+
+.contact {
+   background-color: $color-light-2;
+   color: $color-text-primary;
+
+
+   .social {
+      li:not(:last-child) {
+         margin-right: 2rem;
+      }
+
+      a {
+         display: inline-block;
+         width: 5rem;
+         height: 5rem;
+         border-radius: 50%;
+         background-color: $color-primary;
+         transition: all .1s ease-in;
+
+         i {
+            color: $color-text-secondary;
+            line-height: 5rem;
+            font-size: 2rem;
+         }
+
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+   }
+
+   .contact-us {
+      text-align: left;
+      line-height: 4rem;
+      display: flex;
+      justify-content: space-around;
+      .box{
+         padding: 2rem;
+      }
+      h3 {
+         text-transform: uppercase;
+         font-size: 2.2rem;
+      }
+
+      p {
+         line-height: inherit;
+      }
+
+      i {
+         font-size: 2rem;
+         padding-right: 1rem;
+         color: $color-text-primary;
+      }
+      a {
+         color: inherit;
+         display: block;
+         font-size: 1.6rem;
+   
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+}

@@ -1,0 +1,39 @@
+//
+//	MERCH
+// ------------------------------------------------------
+
+.merch {
+   display: flex;
+   .row-right{
+      align-self: center;
+   }
+
+   &-image {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
+
+   &-items {
+      height: 15rem;
+      display: flex;
+
+      .merch-item {
+         height: 100%;
+         width: 100%;
+         display: inline-block;
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: contain;
+      }
+
+      .merch-tshirt {
+         background-image: url('../img/tricko.png');
+      }
+
+      .merch-cd {
+         background-image: url('../img/cd.png');
+      }
+   }
+}

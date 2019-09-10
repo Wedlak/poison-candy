@@ -1,0 +1,85 @@
+//
+//	ABOUT
+// ------------------------------------------------------
+
+.about {
+   display: block;
+
+   &-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .item {
+         padding: 1rem;
+
+         i {
+            font-size: 6rem;
+            color: $color-primary;
+         }
+      }
+   }
+
+   &-members {
+      height: 80rem;
+      display: flex;
+
+      .member {
+         position: relative;
+         flex: 1;
+         height: 100%;
+         overflow: hidden;
+         background-color: #282b30;
+
+         a {
+            display: block;
+            height: 100%;
+            background-position: center 10%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: scale(1.02);
+            transition: all 0.5s;
+            opacity: 0.6;
+         }
+
+         &:hover a {
+            transform: scale(1);
+            opacity: 1;
+         }
+
+         .patka {
+            background-image: url('../img/av patka.jpg');
+         }
+
+         .mirka {
+            background-image: url('../img/av mirka.jpg');
+         }
+
+         .olinka {
+            background-image: url('../img/av olinka.jpg');
+         }
+
+         .member-text {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            color: $color-text-secondary;
+            opacity: 1;
+            text-shadow: 0 0 .5rem #222;
+            transform: translate(-50%, -50%);
+            transition: all .5s ease-out;
+
+            p {
+               text-shadow: 0 0 .5rem #222;
+               margin-top: 1rem;
+               font-size: 2rem;
+            }
+         }
+
+         &:hover .member-text {
+            opacity: 0;
+         }
+      }
+   }
+}

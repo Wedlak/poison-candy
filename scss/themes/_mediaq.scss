@@ -1,0 +1,223 @@
+//
+//	MEDIA QUERIES
+//
+
+
+@media (max-width: 1440px) {
+   .container-small {
+      padding: 7rem;
+   }
+   .gallery {
+      height: 50rem;
+   }
+   .about {
+      &-members {
+         height: 68rem;
+      }
+   }
+
+   .events {
+      ul {
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+
+   html,
+   body {
+      font-size: 60%;
+   }
+
+   h1 {
+      font-size: 5.5rem;
+      line-height: 5.5rem;
+   }
+
+   h2 {
+      font-size: 4rem;
+      line-height: 4rem;
+   }
+   .heading-icon{
+      font-size: 4.2rem;
+   }
+
+   .header-uvod-sub {
+      font-size: 2.3rem;
+      line-height: 2.3rem;
+      letter-spacing: 1rem;
+   }
+
+   .btn {
+      font-size: 1.8rem;
+      padding: 1rem 6rem;
+
+   }
+   .gallery {
+      height: 45rem;
+   }
+}
+
+@media (max-width: 1024px) {
+   .gallery {
+      height: 36rem;
+   }
+   img {
+      max-height: 70rem;
+   }
+   .container-big, .container-small{
+      padding: 12rem 8rem;
+   }
+   .events, .merch{
+      flex-direction: column;
+   }
+   .merch {
+      flex-direction: column-reverse;
+   }
+   .header {
+      .lizatko {
+         display: none;
+      }
+   }
+
+   .about {
+      &-members {
+         height: 52rem;
+         .member-text {
+            h3{
+               font-size: 2.5rem;
+            }
+            p {
+               font-weight: 300;
+               font-size: 1.8rem !important;
+            }
+         }
+      }
+   }
+
+}
+
+@media (max-width: 768px) {
+   .header {
+      position: relative;
+   }
+   .about {
+      &-members {
+         height: 45rem;
+      }
+   }
+   .gallery {
+      height: 30rem;
+      &__btn{
+         width: 6rem;
+         &:hover {
+            background-color: transparent;  
+         }
+         &:hover i{
+            transform: none;
+         }
+         i{
+            transition: all .25s ease;
+            color: $color-light-1;
+            font-size: 1.5rem;
+         }
+      }
+   }
+}
+
+@media (max-width: 650px) {
+   html,
+   body {
+      font-size: 55%;
+   }
+   h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+   }
+
+   h2 {
+      font-size: 3.5rem;
+      line-height: 3.5rem
+   }
+   .heading-icon{
+      font-size: 4rem;
+   }
+   .underline-middle, .underline-left{
+      height: .2rem;
+      width: 12rem;
+      margin-bottom: 3rem;
+   }
+   .header-uvod-sub {
+      font-size: 2.1rem;
+      letter-spacing: .8rem;
+      line-height: 2.1rem;
+   }
+
+   .btn {
+      font-size: 1.6rem;
+      padding: .8rem 4rem;
+
+   }
+   .container-big, .container-small{
+      padding: 10rem 6rem;
+   }
+   .about-members {
+      height: 40rem;
+   }
+}
+
+@media (max-width: 600px) {
+   .about-members {
+      height: 37rem;
+   }
+   .nav-btn {
+      top: 2rem;
+      right: 2rem;
+      height: 5rem;
+      width: 5rem;
+      
+      .btn-line,
+      .btn-line:before,
+      .btn-line:after {
+         width: 2.5rem;
+      }   
+      .btn-line {
+         margin-top: 2.4rem;   
+      }
+   }
+   .nav-bg {
+      top: 2rem;
+      right: 2rem;
+   }
+   .gallery {
+      height: 25rem;
+   }
+   .contact{
+      .contact-us {
+         flex-direction: column;
+         text-align: center;
+      }
+
+   }
+}
+@media (max-width: 500px) {
+   .container-big, .container-small{
+      padding: 10rem 3rem;
+   }  
+   .about {
+      &-members {
+         display: block;
+         height: 100%;
+         .member{
+            height: 70rem;
+         }
+      }
+   }
+}
+@media (max-width: 300px) {
+   html,
+   body {
+      font-size: 50%;
+   } 
+}
